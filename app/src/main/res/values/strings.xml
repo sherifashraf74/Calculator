@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="_2">2</string>
+    <string name="clear">C</string>
+    <string name="backspace">backSpace</string>
+    <string name="modBtn">%</string>
+    <string name="divisionBtn">/</string>
+    <string name="_3">3</string>
+    <string name="minusBtn">-</string>
+    <string name="_00">00</string>
+    <string name="_0">0</string>
+    <string name="decimal">.</string>
+    <string name="equalBtn">=</string>
+    <string name="_1">1</string>
+    <string name="plusBtn">+</string>
+    <string name="_6">6</string>
+    <string name="_5">5</string>
+    <string name="_4">4</string>
+    <string name="multiplyBtn">*</string>
+    <string name="_9">9</string>
+    <string name="_8">8</string>
+    <string name="_7">7</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="number">
+
+        <item name="android:textColor">#AEABAB</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">15sp</item>
+
+
+    </style>
+
+    <style name="Widget.Theme.FirstProject_calc.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">#000000</item>
+    </style>
+
+    <style name="Widget.Theme.FirstProject_calc.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">#000000</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+
+</resources>

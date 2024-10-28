@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/dua"
+        android:layout_width="76dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="dua"
+        android:padding="15dp"
+        android:paddingTop="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dua"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/themedn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:contentDescription="TODO" android:padding="15sp"
+        android:src="@drawable/daynight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/fullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:contentDescription="fullscreen" android:padding="15sp"
+        android:src="@drawable/fullscreen"
+        app:layout_constraintEnd_toStartOf="@+id/themedn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/result"
+        style="@style/number"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:paddingEnd="50dp"
+        android:text="0"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toTopOf="@id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="RtlSymmetry" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/clear"
+                style="@style/number"
+                android:layout_weight="1"
+                android:text="@string/clear"
+                android:textColor="@color/teal_700"
+                android:onClick="clearInput" />
+
+            <ImageView
+                android:id="@+id/backspace"
+                android:layout_height="30sp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:contentDescription="@string/backspace"
+                android:src="@drawable/ic_outline_backspace_24" />
+
+            <TextView
+                android:id="@+id/mod"
+                style="@style/number"
+                android:text="@string/modBtn"
+                android:textColor="@color/teal_700"
+                android:onClick="onClickNumber" />
+
+            <TextView
+                android:id="@+id/divide"
+                style="@style/number"
+                android:text="@string/divisionBtn"
+                android:textColor="@color/teal_700"
+                android:onClick="onClickNumber" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/seven"
+                style="@style/number"
+                android:text="@string/_7"
+                android:onClick="onClickNumber" />
+
+            <TextView
+                android:id="@+id/eight"
+                style="@style/number"
+                android:text="@string/_8"
+                android:onClick="onClickNumber" />
+
+            <TextView
+                android:id="@+id/nine"
+                style="@style/number"
+                android:text="@string/_9"
+                android:onClick="onClickNumber" />
+
+            <TextView
+                android:id="@+id/multiply"
+                style="@style/number"
+                android:text="@string/multiplyBtn"
+                android:textColor="@color/teal_700"
+                android:onClick="onClickNumber" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/four"
+                style="@style/number"
+                android:text="@string/_4"
+                android:onClick="onClickNumber" />
+
+            <TextView
+                android:id="@+id/five"
+                style="@style/number"
+                android:text="@string/_5"
+                android:onClick="onClickNumber" />
+
+            <TextView
+                android:id="@+id/six"
+                style="@style/number"
+                android:text="@string/_6"
+                android:onClick="onClickNumber" />
+
+            <TextView
+                android:id="@+id/plus"
+                style="@style/number"
+                android:text="@string/plusBtn"
+                android:textColor="@color/teal_700"
+                android:onClick="onClickNumber" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/one"
+                style="@style/number"
+                android:text="@string/_1"
+                android:onClick="onClickNumber" />
+
+            <TextView
+                android:id="@+id/two"
+                style="@style/number"
+                android:text="@string/_2"
+                android:onClick="onClickNumber" />
+
+            <TextView
+                android:id="@+id/three"
+                style="@style/number"
+                android:text="@string/_3"
+                android:onClick="onClickNumber" />
+
+            <TextView
+                android:id="@+id/minus"
+                style="@style/number"
+                android:text="@string/minusBtn"
+                android:textColor="@color/teal_700"
+                android:onClick="onClickNumber" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/doublezero"
+                style="@style/number"
+                android:text="@string/_00"
+                android:onClick="onClickNumber" />
+
+            <TextView
+                android:id="@+id/zero"
+                style="@style/number"
+                android:text="@string/_0"
+                android:onClick="onClickNumber" />
+
+            <TextView
+                android:id="@+id/decimal"
+                style="@style/number"
+                android:text="@string/decimal"
+                android:onClick="onClickNumber" />
+
+            <TextView
+                android:id="@+id/equals"
+                style="@style/number"
+                android:text="@string/equalBtn"
+                android:textColor="@color/teal_700"
+                android:onClick="onClickNumber" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
