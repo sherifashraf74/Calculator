@@ -32,7 +32,6 @@ class MainActivity : AppCompatActivity() {
         binding.backspace.setOnClickListener {
             val currentText = binding.result.text.toString()
             if (currentText.isNotEmpty()) {
-                // Remove the last character
                 binding.result.text = currentText.dropLast(1)
             }
         }
